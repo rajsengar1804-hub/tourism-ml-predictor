@@ -1,0 +1,76 @@
+{
+  "best_baseline": "XGBoost",
+  "baseline_results": [
+    {
+      "model": "XGBoost",
+      "R2": 0.1333484649658203,
+      "RMSE": 0.9074289939886852,
+      "MAE": 0.7110068798065186
+    },
+    {
+      "model": "LightGBM",
+      "R2": 0.1286024694683795,
+      "RMSE": 0.9099102248928909,
+      "MAE": 0.7145348723868175
+    },
+    {
+      "model": "CatBoost",
+      "R2": 0.127005490452203,
+      "RMSE": 0.9107436231581542,
+      "MAE": 0.7148495282307832
+    },
+    {
+      "model": "RandomForest",
+      "R2": 0.06316280812278763,
+      "RMSE": 0.9434577248104429,
+      "MAE": 0.7276279786899962
+    }
+  ],
+  "best_params": {
+    "subsample": 0.7,
+    "n_estimators": 500,
+    "min_child_weight": 10,
+    "max_depth": 10,
+    "learning_rate": 0.02,
+    "colsample_bytree": 0.7
+  },
+  "test_R2": 0.1337299942970276,
+  "test_RMSE": 0.9072292233398311,
+  "test_MAE": 0.7106840014457703,
+  "selected_features": [
+    "CityId",
+    "Attraction_freq",
+    "AttractionId",
+    "CityName_freq",
+    "VisitYear",
+    "VisitMode_freq",
+    "VisitMonth",
+    "Country_freq",
+    "VisitMonth_cos"
+  ],
+  "variance_features": [
+    "VisitYear",
+    "VisitMonth",
+    "AttractionId",
+    "ContinentId",
+    "RegionId",
+    "CountryId",
+    "CityId",
+    "AttractionCityId",
+    "AttractionTypeId",
+    "VisitMode_freq",
+    "CityName_freq",
+    "Country_freq",
+    "Region_freq",
+    "Continent_freq",
+    "Attraction_freq",
+    "AttractionAddress_freq",
+    "AttractionType_freq",
+    "VisitMonth_sin",
+    "VisitMonth_cos"
+  ],
+  "correlation_dropped": [
+    "CountryId",
+    "AttractionAddress_freq"
+  ]
+}

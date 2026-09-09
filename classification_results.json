@@ -1,0 +1,99 @@
+{
+  "best_baseline": "RandomForest",
+  "baseline_results": [
+    {
+      "model": "RandomForest",
+      "Accuracy": 0.49050543221539916,
+      "BalancedAccuracy": 0.3622081987069691,
+      "MacroF1": 0.3760861527035764,
+      "WeightedF1": 0.47709257419083984
+    },
+    {
+      "model": "XGBoost",
+      "Accuracy": 0.5043930089749645,
+      "BalancedAccuracy": 0.3149157096351709,
+      "MacroF1": 0.3202788423141168,
+      "WeightedF1": 0.46005436401350097
+    },
+    {
+      "model": "LightGBM",
+      "Accuracy": 0.49296173830892775,
+      "BalancedAccuracy": 0.2991934311812908,
+      "MacroF1": 0.2975840519146389,
+      "WeightedF1": 0.44399090316103196
+    },
+    {
+      "model": "CatBoost",
+      "Accuracy": 0.48927727916863484,
+      "BalancedAccuracy": 0.2815760181669683,
+      "MacroF1": 0.267725498654333,
+      "WeightedF1": 0.43145961872696864
+    }
+  ],
+  "balanced_metrics": {
+    "Accuracy": 0.4752952290977799,
+    "BalancedAccuracy": 0.37052531003082556,
+    "MacroF1": 0.3728135459456109,
+    "WeightedF1": 0.4674593389994436
+  },
+  "smote_metrics": {
+    "Accuracy": 0.47321681624940953,
+    "BalancedAccuracy": 0.364498205379172,
+    "MacroF1": 0.36839029652179345,
+    "WeightedF1": 0.4651380355772313
+  },
+  "selected_balance_method": "class_weight=balanced",
+  "best_params": {
+    "n_estimators": 100,
+    "min_samples_leaf": 2,
+    "max_features": 1.0,
+    "max_depth": null
+  },
+  "test_Accuracy": 0.47850732168162496,
+  "test_BalancedAccuracy": 0.3919446501693718,
+  "test_MacroF1": 0.3815574056860741,
+  "test_WeightedF1": 0.4769344150595599,
+  "classes": [
+    "Business",
+    "Couples",
+    "Family",
+    "Friends",
+    "Solo"
+  ],
+  "selected_features": [
+    "CityId",
+    "AttractionId",
+    "Attraction_freq",
+    "CityName_freq",
+    "VisitYear",
+    "Country_freq",
+    "AttractionTypeId",
+    "VisitMonth",
+    "VisitMonth_cos"
+  ],
+  "variance_features": [
+    "VisitYear",
+    "VisitMonth",
+    "AttractionId",
+    "Rating",
+    "ContinentId",
+    "RegionId",
+    "CountryId",
+    "CityId",
+    "AttractionCityId",
+    "AttractionTypeId",
+    "CityName_freq",
+    "Country_freq",
+    "Region_freq",
+    "Continent_freq",
+    "Attraction_freq",
+    "AttractionAddress_freq",
+    "AttractionType_freq",
+    "VisitMonth_sin",
+    "VisitMonth_cos"
+  ],
+  "correlation_dropped": [
+    "CountryId",
+    "AttractionAddress_freq"
+  ]
+}
