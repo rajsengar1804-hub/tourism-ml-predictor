@@ -1,4 +1,4 @@
-# Deployment link -tourism-ml-predictor-wxumtsrjpzp9pyrwbdzz8e.streamlit.app
+
 # Tourism ML: Rating Regression + VisitMode Classification
 
 This project uses the supplied `cleaned_tourism_data(1).csv` and intentionally does **not** start with EDA.
